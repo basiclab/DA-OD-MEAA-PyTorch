@@ -8,8 +8,9 @@ Many issues have been reported there to setup the environment. We used Pytorch 0
 The different version of pytorch will cause some errors, which have to be handled based on each envirionment.
 
 ### Tested Hardwards & Softwares
-- RTX2070
+- GTX 1070
 - Pytorch 0.4.1
+- CUDA 10.1
 ```
 conda install pytorch=0.4.1 cuda90 -c pytorch
 ```
@@ -85,10 +86,14 @@ python demo_global.py --net vgg16 --load_name models/vgg16/cityscape/*.pth --cud
 ## References
 
 ```
-@article{saito2018strong,
-  title={Strong-Weak Distribution Alignment for Adaptive Object Detection},
-  author={Saito, Kuniaki and Ushiku, Yoshitaka and Harada, Tatsuya and Saenko, Kate},
-  journal={arXiv},
-  year={2018}
+@inproceedings{10.1145/3394171.3413553,
+author = {Nguyen, Dang-Khoa and Tseng, Wei-Lun and Shuai, Hong-Han},
+title = {Domain-Adaptive Object Detection via Uncertainty-Aware Distribution Alignment},
+year = {2020},
+isbn = {9781450379885},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3394171.3413553},
+doi = {10.1145/3394171.3413553},
 }
 ```
