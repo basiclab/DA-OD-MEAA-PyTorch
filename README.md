@@ -17,7 +17,7 @@ conda install pytorch=0.4.1 torchvision==0.2.1 cuda92 -c pytorch
 ```
 mkdir data
 cd lib
-sh make.sh (add -gencode arch=compute_70,code=sm_70" # added for RTX20xx)
+sh make.sh (add -gencode arch=compute_70,code=sm_70" # added for GTX10XX)
 ```
 
 - Note to set number of classes = 20 in lib/datasets/water.py
