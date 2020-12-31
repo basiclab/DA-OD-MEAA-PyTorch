@@ -11,7 +11,7 @@ The different version of pytorch will cause some errors, which have to be handle
 - Pytorch 0.4.1
 - CUDA 9.2
 ```
-conda install pytorch=0.4.1 cuda92 -c pytorch
+conda install pytorch=0.4.1 torchvision==0.2.1 cuda92 -c pytorch
 ```
 - Before training:
 ```
