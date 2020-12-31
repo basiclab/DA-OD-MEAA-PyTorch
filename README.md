@@ -79,10 +79,10 @@ python test_net_MEAA.py --cuda --net vgg16 --dataset foggy_cityscape --load_name
 Our trained model for foggy_cityscape:
 https://drive.google.com/file/d/17pDu7mrxtx4cbpV2HNCGm2fzqCM1BZqd/view?usp=sharing
 
-Results:
-```
+- Results:
+
 ![alt text](https://github.com/basiclab/DA-OD-MEAA-PyTorch/blob/main/result.png)
-```
+
 
 
 ## Demo
