@@ -1,11 +1,9 @@
 # Domain-Adaptive Object Detection via Uncertainty-Aware Distribution Alignment
-## (Notice) Under construction,this repo  will be updated in one week.
-
 
 ## Introduction
 Follow [faster-rcnn repository](https://github.com/jwyang/faster-rcnn.pytorch)
  to setup the environment. When installing pytorch-faster-rcnn, you may encounter some issues.
-Many issues have been reported there to setup the environment. We used Pytorch 0.4.0 for this project.
+Many issues have been reported there to setup the environment. We used Pytorch 0.4.1 for this project.
 The different version of pytorch will cause some errors, which have to be handled based on each envirionment.
 
 ### Tested Hardwards & Softwares
@@ -13,11 +11,10 @@ The different version of pytorch will cause some errors, which have to be handle
 - Pytorch 0.4.1
 - CUDA 9.2
 ```
-conda install pytorch=0.4.1 cuda90 -c pytorch
+conda install pytorch=0.4.1 cuda92 -c pytorch
 ```
 - Before training:
 ```
-
 mkdir data
 cd lib
 sh make.sh (add -gencode arch=compute_70,code=sm_70" # added for RTX20xx)
