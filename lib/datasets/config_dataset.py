@@ -15,20 +15,19 @@ cfg_d = __D
 #
 # Training options
 #with regard to pascal, the directories under the path will be ./VOC2007, ./VOC2012"
-__D.PASCAL = "/home/basic/Downloads/datasets/VOCdevkit/VOCdevkit"
+__D.PASCAL = "Datasets/VOCdevkit/VOCdevkit"
 __D.PASCALCLIP = ""
 __D.PASCALWATER = "/VOCdevkit"
 
 #For these datasets, the directories under the path will be Annotations  ImageSets  JPEGImages."
-__D.CLIPART = "/home/basic/Downloads/datasets/clipart"
-__D.WATER = "/home/basic/Downloads/datasets/watercolor"
-__D.SIM10K = "/home/basic/Downloads/datasets/sim10k/VOC2012"
+__D.CLIPART = "Datasets/clipart"
+__D.WATER = "Datasets/watercolor"
+__D.SIM10K = "Datasets/sim10k/VOC2012"
 __D.CITYSCAPE_CAR = "/VOC2007"
-# __D.CITYSCAPE = "/home/basic/Downloads/datasets/cityscapes/VOC2007"
-# __D.FOGGYCITY = "/home/basic/Downloads/datasets/foggy_cityscapes/VOC2007"
-__D.BDD100K = "/home/basic/Downloads/datasets/bdd100k/VOC2007"
-__D.CITYSCAPE = "/media/basic/ssd256/cityscapes/VOC2007"
-__D.FOGGYCITY = "/media/basic/ssd256/foggy_cityscapes/VOC2007"
+__D.CITYSCAPE = "Datasets/cityscapes/VOC2007"
+__D.FOGGYCITY = "Datasets/foggy_cityscapes/VOC2007"
+__D.BDD100K = "Datasets/bdd100k/VOC2007"
+
 def _merge_a_into_b(a, b):
   """Merge config dictionary a into config dictionary b, clobbering the
   options in b whenever they are also specified in a.

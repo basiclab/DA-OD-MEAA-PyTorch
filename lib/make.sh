@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-export PATH=/usr/local/cuda-10.1/bin${PATH:+:${PATH}}
-export CPATH=/usr/local/cuda-10.1/include${CPATH:+:${CPATH}}
-export LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+export PATH=/usr/local/cuda-9.2/bin${PATH:+:${PATH}}
+export CPATH=/usr/local/cuda-9.2/include${CPATH:+:${CPATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-9.2/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 # CUDA_PATH=/usr/local/cuda/
 
-export CUDA_PATH=/usr/local/cuda/
+export CUDA_PATH=/usr/local/cuda-9.2/
 #You may also want to ad the following
 #export C_INCLUDE_PATH=/opt/cuda/include
 
@@ -20,7 +20,7 @@ CUDA_ARCH="-gencode arch=compute_30,code=sm_30 \
            -gencode arch=compute_52,code=sm_52 \
            -gencode arch=compute_60,code=sm_60 \
            -gencode arch=compute_61,code=sm_61 \
-           -gencode arch=compute_70,code=sm_70" # added for RTX20xx
+           -gencode arch=compute_70,code=sm_70 "
 
 # compile NMS
 cd model/nms/src

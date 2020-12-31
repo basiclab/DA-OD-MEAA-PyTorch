@@ -9,9 +9,9 @@ Many issues have been reported there to setup the environment. We used Pytorch 0
 The different version of pytorch will cause some errors, which have to be handled based on each envirionment.
 
 ### Tested Hardwards & Softwares
-- GTX 1070
+- GTX 1080
 - Pytorch 0.4.1
-- CUDA 10.1
+- CUDA 9.2
 ```
 conda install pytorch=0.4.1 cuda90 -c pytorch
 ```
@@ -71,13 +71,13 @@ Download them and write the path in __C.VGG_PATH and __C.RESNET_PATH at lib/mode
 ## Train
 - Cityscapes --> Foggy_cityscapes
 ```
-python3 trainval_net_MEAA.py --cuda --net vgg16 --dataset cityscape --dataset_t foggy_cityscape
+python trainval_net_MEAA.py --cuda --net vgg16 --dataset cityscape --dataset_t foggy_cityscape
 ```
 
 ## Test
 - Cityscapes --> Foggy_cityscapes
 ```
-python3 test_net_MEAA.py --cuda --net vgg16 --dataset foggy_cityscape --load_name models/vgg16/cityscape/*.pth
+python test_net_MEAA.py --cuda --net vgg16 --dataset foggy_cityscape --load_name models/vgg16/cityscape/*.pth
 ```
 
 ## Demo
