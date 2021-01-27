@@ -1,6 +1,18 @@
 # Domain-Adaptive Object Detection via Uncertainty-Aware Distribution Alignment
 
-## Introduction
+
+
+Multi-level Entropy Attention Alignment (MEAA) is an end-to-end approach for unsupervised domain adaptation of object detector. Specifically, MEAA consists of two main components: 
+
+(1) Local Uncertainty Attentional Alignment (LUAA) module to accelerate the model better perceiving structure-invariant objects of interest by utilizing information theory to measure the uncertainty of each local region via the entropy of the pixel-wise domain classifier 
+
+(2) Multi-level Uncertainty-Aware Context Alignment (MUCA) module to enrich domain-invariant information of relevant objects based on the entropy of multi-level domain classifiers
+
+![Overall architecture design](https://github.com/basiclab/DA-OD-MEAA-PyTorch/blob/main/imgs/architecture.png)
+
+
+
+## Setup Introduction
 Follow [faster-rcnn repository](https://github.com/jwyang/faster-rcnn.pytorch)
  to setup the environment. When installing pytorch-faster-rcnn, you may encounter some issues.
 Many issues have been reported there to setup the environment. We used Pytorch 0.4.1 for this project.
@@ -81,7 +93,7 @@ https://drive.google.com/file/d/17pDu7mrxtx4cbpV2HNCGm2fzqCM1BZqd/view?usp=shari
 
 - Results:
 
-![alt text](https://github.com/basiclab/DA-OD-MEAA-PyTorch/blob/main/result.png)
+![command line output results](https://github.com/basiclab/DA-OD-MEAA-PyTorch/blob/main/imgs/result.png)
 
 
 
