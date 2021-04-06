@@ -84,6 +84,11 @@ Download them and write the path in __C.VGG_PATH and __C.RESNET_PATH at lib/mode
 ```
 python trainval_net_MEAA.py --cuda --net vgg16 --dataset cityscape --dataset_t foggy_cityscape
 ```
+### use tensorboard
+```
+python trainval_net_MEAA.py --cuda --net vgg16 --dataset cityscape --dataset_t foggy_cityscape --use_tfb
+```
+--use_tfb will enable tensorboard to record training results
 
 ## Test
 - Cityscapes --> Foggy_cityscapes
@@ -97,9 +102,13 @@ https://drive.google.com/file/d/17pDu7mrxtx4cbpV2HNCGm2fzqCM1BZqd/view?usp=shari
 
 ![command line output results](https://github.com/basiclab/DA-OD-MEAA-PyTorch/blob/main/imgs/result.png)
 
-
+## Reminder 
+For training "pascasl_voc_0712 -> water"  results, since we only use 6 classes for evaluation.
+We need to calculate results manually.
+Just use chosen 6 classes to calculate mAP.
 
 ## Demo
+This function is under construction now.
 ```
 python demo_global.py --net vgg16 --load_name models/vgg16/cityscape/*.pth --cuda --dataset cityscape
 ```
